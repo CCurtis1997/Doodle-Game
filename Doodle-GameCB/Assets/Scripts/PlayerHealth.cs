@@ -5,14 +5,11 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-
-
     public Slider healthbar;
     private float _maxHealth = 100;
     private float _currentHealth;
     private float _healthUpdate;
     public float _damage = 5;
-    
 
     // Start is called before the first frame update
     void Start()
@@ -37,15 +34,15 @@ public class PlayerHealth : MonoBehaviour
             CalculateHealth();
             healthbar.value = CalculateHealth();
 
-        } 
+        }
     }
 
-    private void DealDamage()
+    public void DealDamage()
     {
         _currentHealth -= _damage;
     }
 
-    float CalculateHealth()
+    public float CalculateHealth()
     {
         return _currentHealth / _maxHealth;
     }

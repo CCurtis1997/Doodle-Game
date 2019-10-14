@@ -13,7 +13,7 @@ public class CharacterController : MonoBehaviour
 
     [Header("Booleans")]
     private bool facingRight = true;
-    private bool isGrounded;
+    public bool isGrounded;
 
     [Header ("Physics Forces")]
     public float horizontalMoveSpeed;
