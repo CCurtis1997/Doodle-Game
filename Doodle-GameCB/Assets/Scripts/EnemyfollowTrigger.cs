@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyPickupGameObject : MonoBehaviour
+public class EnemyfollowTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,8 +16,9 @@ public class KeyPickupGameObject : MonoBehaviour
         
     }
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        
     }
 }
