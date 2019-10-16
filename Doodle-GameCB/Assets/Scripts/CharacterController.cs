@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     public Rigidbody2D rb;
+   
     public float checkRadius;
     public LayerMask whatIsGround;
 
@@ -72,6 +73,7 @@ public class CharacterController : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+       
 
     }
 }
