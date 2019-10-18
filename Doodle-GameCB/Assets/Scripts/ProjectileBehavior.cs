@@ -10,15 +10,15 @@ public class ProjectileBehavior : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        rb.velocity = Vector2.right * moveSpeed;
-        rb.AddForce(transform.up * upForce);
+        
+        
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

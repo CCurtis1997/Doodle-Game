@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ShootEraser : MonoBehaviour
 {
     public GameObject eraser;
-    
+   
    
 
     public Slider shootDelayBar;
@@ -23,9 +23,11 @@ public class ShootEraser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+       
         if (_currentCoolDown >= 0 && _currentCoolDown <= 100)
         {
-            _currentCoolDown += Time.deltaTime * refillSpeed;
+            _currentCoolDown += Time.deltaTime * refillSpeed ;
             shootDelayBar.value = _currentCoolDown;
 
 
@@ -35,9 +37,9 @@ public class ShootEraser : MonoBehaviour
             _currentCoolDown = 100;
         }
 
-        if (Input.GetKeyDown(KeyCode.F) && _currentCoolDown > 80)
+        if (Input.GetMouseButtonDown(0) && _currentCoolDown > 80)
         {
-            Instantiate(eraser, transform.position, Quaternion.identity);
+            Instantiate(eraser, transform.position, transform.rotation);
             SetBar();
 
             Debug.Log("firing");

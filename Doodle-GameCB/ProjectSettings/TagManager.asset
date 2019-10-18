@@ -7,6 +7,9 @@ TagManager:
   - Projectile
   - Ground
   - Enemy
+  - Coin
+  - Money Bag
+  - Diamond
   layers:
   - Default
   - TransparentFX

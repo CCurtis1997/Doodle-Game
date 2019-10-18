@@ -21,14 +21,15 @@ public class CharacterController : MonoBehaviour
     public float jumpforce;
     private float moveInput;
 
-   
-    
+
+    public GameObject launcher;
 
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
     }
 
     private void FixedUpdate()
@@ -52,7 +53,9 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
+        
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpforce;
             isGrounded = false;
@@ -73,7 +76,11 @@ public class CharacterController : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
-       
 
+        
     }
+
+  
+
+
 }
