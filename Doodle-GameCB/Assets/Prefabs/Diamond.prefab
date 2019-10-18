@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7277499440220498283}
   - component: {fileID: 2426151722378043985}
   - component: {fileID: 5936798298647498891}
+  - component: {fileID: 1880389505270121396}
   m_Layer: 8
   m_Name: Diamond
   m_TagString: Untagged
@@ -136,3 +137,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.86
+--- !u!114 &1880389505270121396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6913502778834150828}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8fb47299e051c04fa0acd8fc58d0f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDirections: 
+  moveForce: 2
+  upForce: 1
+  rb: {fileID: 2426151722378043985}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3699689400876048180}
   - component: {fileID: 3449287288917010233}
   - component: {fileID: 3210983501297486305}
+  - component: {fileID: 8707465722298311419}
   m_Layer: 8
   m_Name: Money Bag
   m_TagString: Untagged
@@ -136,3 +137,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.575
+--- !u!114 &8707465722298311419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173518554401790702}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8fb47299e051c04fa0acd8fc58d0f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDirections: 
+  moveForce: 2
+  upForce: 1
+  rb: {fileID: 3699689400876048180}
