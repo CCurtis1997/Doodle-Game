@@ -13,6 +13,7 @@ public class CharacterController : MonoBehaviour
 
     [Header("Booleans")]
     private bool facingRight = true;
+    private bool isWalking = false;
     public bool isGrounded;
 
     [Header ("Physics Forces")]
@@ -45,7 +46,6 @@ public class CharacterController : MonoBehaviour
         {
             Flip();
         }
-        
     }
 
     // Update is called once per frame
