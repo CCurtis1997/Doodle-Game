@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class KeyPickupGameObject2 : MonoBehaviour
+public class KeyPickupGameObjectTop : MonoBehaviour
 {
-    public Image key;
-    
+    public Image keyTop;
     // Start is called before the first frame update
     void Start()
     {
-        key.enabled = false;
-
+        keyTop.enabled = false;
     }
 
     // Update is called once per frame
@@ -20,14 +18,17 @@ public class KeyPickupGameObject2 : MonoBehaviour
         
     }
 
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player")
         {
             Destroy(gameObject);
 
-            key.enabled = true;
+            keyTop.enabled = true;
             Debug.Log("Giggity");
         }
     }
+
+
 }
