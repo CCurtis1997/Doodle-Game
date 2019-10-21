@@ -25,15 +25,13 @@ public class PlayerHealth : MonoBehaviour
             ResetHealth();
         }
     }
-
-    void FixedUpdate()
+    public void OnCollisionEnter2D(Collision2D hit)
     {
-        if (Input.GetKeyDown(KeyCode.E) && _currentHealth > 0)
+        if(hit.gameObject.tag == "enemy")
         {
             DealDamage();
             CalculateHealth();
             healthbar.value = CalculateHealth();
-
         }
     }
 

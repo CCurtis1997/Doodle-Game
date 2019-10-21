@@ -1308,7 +1308,6 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
-  animator: {fileID: 0}
   groundCheck: {fileID: 398764806}
   isGrounded: 0
   horizontalMoveSpeed: 5
@@ -1325,7 +1324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d09b27aa95020ae4fbc0a1bd3db764b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthbar: {fileID: 0}
+  healthbar: {fileID: 585893738}
   _damage: 5
 --- !u!1 &1506374680
 GameObject:
