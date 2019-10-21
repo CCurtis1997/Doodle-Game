@@ -9,6 +9,7 @@ TagManager:
   - Money Bag
   - Diamond
   - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
