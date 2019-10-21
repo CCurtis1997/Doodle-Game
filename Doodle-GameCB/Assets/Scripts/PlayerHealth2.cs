@@ -27,7 +27,7 @@ public class PlayerHealth2 : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D hit)
     {
-        if(hit.gameObject.tag == "enemy")
+        if(hit.gameObject.tag == "Enemy")
         {
             DealDamage();
             CalculateHealth();

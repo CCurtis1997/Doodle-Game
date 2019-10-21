@@ -9,6 +9,8 @@ public class CharacterController : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
 
+    public Animator animator;
+
     [Header("Transforms")]
     public Transform groundCheck;
 
@@ -29,7 +31,7 @@ public class CharacterController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -46,6 +48,15 @@ public class CharacterController : MonoBehaviour
         } else if (facingRight == true && moveInput < 0)
         {
             Flip();
+        }
+
+        if (moveInput != 0)
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
         }
         
     }
