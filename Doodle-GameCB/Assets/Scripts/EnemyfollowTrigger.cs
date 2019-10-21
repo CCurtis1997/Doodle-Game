@@ -37,7 +37,10 @@ public class EnemyfollowTrigger : MonoBehaviour
     void Update()
     {
      
-        
+        //if (_isFacingRight == false)
+        //{
+        //    Flip();
+        //}
 
 
 
@@ -68,12 +71,24 @@ public class EnemyfollowTrigger : MonoBehaviour
         }
     }
 
-    private void Flip()
-    {
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
-    }
+    //private void FixedUpdate()
+    //{
+    //    if (_isFacingRight == false)
+    //    {
+    //        Flip();
+    //    }
+    //    else if (_isFacingRight == true)
+    //    {
+    //        Flip();
+    //    }
+    //}
+
+    //private void Flip()
+    //{
+    //    Vector3 Scaler = transform.localScale;
+    //    Scaler.x *= -1;
+    //    transform.localScale = Scaler;
+    //}
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -87,5 +102,16 @@ public class EnemyfollowTrigger : MonoBehaviour
         _characterNear = false;
     }
 
-    
+    //private void Flip()
+    //{
+    //    //set facing right to the opposite of what it is
+    //    _isFacingRight = !_isFacingRight;
+    //    //get the scale of the character model and flip it
+    //    Vector3 Scaler = transform.localScale;
+    //    Scaler.x *= -1;
+    //    transform.localScale = Scaler;
+
+    //}
+
+
 }

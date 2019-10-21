@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterController2 : MonoBehaviour
 {
@@ -73,5 +74,13 @@ public class CharacterController2 : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D hit)
+    {
+        if(hit.gameObject.tag == "Death")
+        {
+            SceneManager.LoadScene("grassland");
+        }
     }
 }

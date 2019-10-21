@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth2 : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerHealth2 : MonoBehaviour
     private float _currentHealth;
     private float _healthUpdate;
     public float _damage = 5;
+    public float deathLevel;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +24,15 @@ public class PlayerHealth2 : MonoBehaviour
     {
         if (_currentHealth == 0)
         {
-            ResetHealth();
+            //ResetHealth();
+            SceneManager.LoadScene("Grassland");
         }
+
+        if (transform.position.y <= deathLevel)
+        {
+            _currentHealth = 0;
+        }
+
     }
     public void OnCollisionEnter2D(Collision2D hit)
     {

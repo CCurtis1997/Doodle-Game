@@ -292,6 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthbar: {fileID: 0}
   _damage: 5
+  deathLevel: -27
 --- !u!95 &2523335280178456245
 Animator:
   serializedVersion: 3
