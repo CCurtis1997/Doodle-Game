@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Projectile
-  - Ground
-  - Enemy
-  - Coin
-  - Money Bag
-  - Diamond
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -19,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - Ground
-  - Background
+  - PostProcessing
+  - 
+  - 
   - 
   - 
   - 
@@ -46,16 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 862024717
-    locked: 0
-  - name: Platform
-    uniqueID: 1018516911
-    locked: 0
-  - name: Player
-    uniqueID: 1773622719
-    locked: 0
-  - name: Foreground
-    uniqueID: 291557471
     locked: 0
